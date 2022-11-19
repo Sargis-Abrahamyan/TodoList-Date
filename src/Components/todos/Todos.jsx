@@ -11,7 +11,6 @@ const TodoItem = () => {
   const todos = useSelector((state) => state.todos.todoS);
   let todosItems = todos[date] || [];
 
-
   return (
     <div className={styles.todosContainer}>
       <button onClick={() => navigate("/")} className={styles.backBtn}>
