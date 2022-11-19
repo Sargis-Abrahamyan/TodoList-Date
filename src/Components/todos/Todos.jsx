@@ -13,9 +13,7 @@ const TodoItem = () => {
 
   return (
     <div className={styles.todosContainer}>
-      <button onClick={() => navigate("/")} className={styles.backBtn}>
-        go Back
-      </button>
+      <button onClick={() => navigate("/")} className={styles.backBtn}> go Back </button>
 
       <TodosItems todosItems={todosItems} />
       {!todosItems.length && <span>no information</span>}
