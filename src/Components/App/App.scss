@@ -1,0 +1,14 @@
+$backgroundApp:#fff;
+
+.app {
+  max-width: 900px;
+  min-height: 500px;
+  background:$backgroundApp ;
+  margin: 50px auto;
+  padding: 7px;
+  border-radius: 12px;
+  h1 {
+    padding: 15px 45px;
+  }
+}
+

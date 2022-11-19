@@ -1,0 +1,14 @@
+$delColor:#3a85f7;
+
+.CheckboxTodosBlock{
+    display: flex;
+    align-items: end;
+
+    p{
+        margin: 0 10px;
+    }
+
+    p>del{
+        color:$delColor ;
+    }
+}

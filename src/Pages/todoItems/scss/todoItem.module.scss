@@ -1,0 +1,24 @@
+$todosBlockBackground :#F2F2F7;
+
+.todosContainer {
+  max-width: 720px;
+  margin: auto;
+
+.todosItemsBlock{
+  background-color:$todosBlockBackground;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+  .todosItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  .todosBtn{
+    display: flex;
+  }
+}
+    
+}

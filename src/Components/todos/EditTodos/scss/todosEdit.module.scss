@@ -1,0 +1,20 @@
+$colorBlue :  blue;
+
+.TodosEditform {
+  max-width: 730px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .todosBtnBlock {
+    display: flex;
+  }
+  .editInput {
+    outline: none;
+    border: 2px solid $colorBlue;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: $colorBlue;
+    
+  }
+}

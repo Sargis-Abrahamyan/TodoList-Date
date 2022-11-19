@@ -1,0 +1,42 @@
+$DateContainer :#f2f2f7;
+$linkbackground :#ffff;
+$linkItems : #3a85f7;
+$hoverColor : red;
+
+.dateItemsContainer {
+  max-width: 800px;
+  min-height: 224px;
+  border-radius: 8px;
+  background:$DateContainer;
+  margin: 30px auto;
+  padding: 6px;
+
+  h2 {
+    padding: 20px;
+  }
+  
+  .linkBlock {
+    max-width: 730px;
+    background-color: $linkbackground;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 16px;
+
+    .linkTodoItems {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color:$linkItems ;
+      text-decoration: none;
+
+      &:hover {
+        color:$hoverColor;
+      }
+    }
+  }
+}

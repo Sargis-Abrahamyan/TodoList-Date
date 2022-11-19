@@ -1,0 +1,52 @@
+$colBlue : #3a85f7;
+$colWhite : #ffff;
+$addContainerColor : #f2f2f7;
+
+.addTodosContainer {
+  max-width: 800px;
+  min-height: 145px;
+  border-radius: 8px;
+  background:$addContainerColor ;
+  margin: auto;
+  h2 {
+    padding: 20px;
+  }
+  .addInputFormContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    input {
+      height: 48px;
+      width: 300px;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      text-indent: 10px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .todosAdd {
+      width: 88px;
+      height: 48px;
+      background: $colBlue;
+      border-radius: 8px;
+      color: $colWhite;
+      outline: none;
+      border: none;
+      transition: 1s;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 1px 2px 3px 2px $colBlue;
+        transition: 1s;
+      }
+    }
+  }
+}
