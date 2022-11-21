@@ -17,12 +17,10 @@ const todoSlice = createSlice({
       };
 
       if (Array.isArray(state.todoS[payload.date])) {
-        
         state.todoS[payload.date].push(newTodos);
         localStorage.setItem("todos", JSON.stringify(state.todoS, payload));
       }
       else {
-
         state.todoS[payload.date] = [newTodos];
         localStorage.setItem("todos", JSON.stringify(state.todoS, payload));
       }
