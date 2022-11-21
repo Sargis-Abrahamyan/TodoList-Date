@@ -5,11 +5,9 @@ const todoSlice = createSlice({
   initialState: {
     // Key: date, value array of todoS
     todoS: JSON.parse(localStorage.getItem("todos")) || {},
-
   },
 
   reducers: {
-
     addTodo(state, { payload }) {
       const newTodos = {
         id: new Date().getTime(),
@@ -19,7 +17,7 @@ const todoSlice = createSlice({
       };
 
       if (Array.isArray(state.todoS[payload.date])) {
-
+        
         state.todoS[payload.date].push(newTodos);
         localStorage.setItem("todos", JSON.stringify(state.todoS, payload));
       }
@@ -31,7 +29,6 @@ const todoSlice = createSlice({
     },
 
     isDane(state, { payload }) {
-
       state.todoS[payload.date] = state.todoS[payload.date].map((completed) => {
         if (completed.id === payload.id) {
           completed.isCompleted = !completed.isCompleted;
@@ -41,7 +38,6 @@ const todoSlice = createSlice({
     },
 
     deleteTodos(state, { payload }) {
-
       state.todoS[payload.date] = state.todoS[payload.date].filter(
         (todoDelete) => todoDelete.id !== payload.id
       );
@@ -49,7 +45,6 @@ const todoSlice = createSlice({
     },
 
     editTodos(state, { payload }) {
-      
       state.todoS[payload.itemsTodos.date] = state.todoS[payload.itemsTodos.date].map(
         (edit) => {
           if (edit.id === payload.itemsTodos.id) {
