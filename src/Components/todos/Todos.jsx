@@ -16,7 +16,7 @@ const TodoItem = () => {
       <button onClick={() => navigate("/")} className={styles.backBtn}> go Back </button>
 
       <TodosItems todosItems={todosItems} />
-      {!todosItems.length && <span>no information</span>}
+      {!todosItems.length && <span className={styles.todosLengthInfo}>no information</span>}
     </div>
   );
 };

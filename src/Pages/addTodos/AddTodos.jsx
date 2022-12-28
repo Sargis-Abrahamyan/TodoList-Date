@@ -19,19 +19,18 @@ const AddTodos = () => {
 
   const addNewTodos = (e) => {
     e.preventDefault();
-    
+
     if (todoItems.date === "") {
       alert("fouled most be filled");
-    } 
+    }
     else if (todoItems.value.length < 3) {
       alert("select a date is required");
-    } 
+    }
     else {
       dispatch(addTodo(todoItems));
       setTodoItem("");
     }
   };
-
   return (
     <>
       <h1>To do List</h1>

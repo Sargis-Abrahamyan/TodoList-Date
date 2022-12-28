@@ -27,6 +27,9 @@ $addContainerColor : #f2f2f7;
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
+      &:focus{
+            box-shadow: 2px 3px 4px 0px slategrey
+      }
     }
     .todosAdd {
       width: 88px;

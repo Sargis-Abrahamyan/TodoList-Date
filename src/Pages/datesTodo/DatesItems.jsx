@@ -14,11 +14,10 @@ export const DatesItems = () => {
       {Object.keys(dateTodos).map((dateItemTodos, index) => {
 
         return (
-          <div className={styles.linkBlock} key={index}>
+          dateTodos[dateItemTodos].length !== 0 && <div className={styles.linkBlock} key={index}>
             <Link to={`todos/${dateItemTodos}`} className={styles.linkTodoItems}>
               {dateItemTodos} ({dateTodos[dateItemTodos].length})
               <i className="fa-solid fa-arrow-right"></i>
-
             </Link>
 
           </div>

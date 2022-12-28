@@ -18,7 +18,7 @@ const todoSlice = createSlice({
 
       if (Array.isArray(state.todoS[payload.date])) {
         state.todoS[payload.date].push(newTodos);
-        localStorage.setItem("todos", JSON.stringify(state.todoS, payload));
+        localStorage.setItem("todos", JSON.stringify(state.todoS, payload))
       }
       else {
         state.todoS[payload.date] = [newTodos];
@@ -39,7 +39,8 @@ const todoSlice = createSlice({
       state.todoS[payload.date] = state.todoS[payload.date].filter(
         (todoDelete) => todoDelete.id !== payload.id
       );
-      localStorage.setItem("todos", JSON.stringify(state.todoS, payload));
+      state.todoS[payload.date].length === 0 ? localStorage.removeItem("todos") :
+        localStorage.setItem("todos", JSON.stringify(state.todoS, payload))
     },
 
     editTodos(state, { payload }) {

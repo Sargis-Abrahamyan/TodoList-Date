@@ -17,4 +17,4 @@ const TodosItems = ({ todosItems }) => {
   )
 }
 
-export default TodosItems
+export default TodosItems;
